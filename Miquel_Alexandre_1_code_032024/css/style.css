@@ -18,8 +18,8 @@ body {
     justify-content: center;
 }
 
-h2{
-    font-size: 18px;
+.no-margin{
+    margin: 0;
 }
 .main-container {
     width: 100%;
@@ -112,26 +112,30 @@ h2{
 
 /******search bar******/
 
-.barre-de-recherche{    
+.barre-de-recherche form{
     display: flex;
-    height: 49px;
-    align-items: center;
+    height: 50px;
+}
+.barre-de-recherche p{
+    margin: 0;
+   
 }
 .fa-magnifying-glass{
     display: none;
 }
 
 .barre-de-recherche input{
+    height: 100%;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
 
     width: 150px;
-    height: 47px;
+    height: 48px;
     padding: 0px 20px;
 
-    
+ 
     font-size: 18px;
     color: black;
     font-weight: 700;
@@ -139,21 +143,20 @@ h2{
 
 .fa-location-dot{
     color: black;
-}
+    }
 .barre-de-recherche label{
     background-color: #F2F2F2;
-    padding: 15px;
+    padding: 15.5px 20px 15.5px 20px;
     padding-right: 12px;
     border-radius: 15px 0px 0px 15px;
-}
+    }
 
-/******bouton******/
-.barre-de-recherche button{
+    .barre-de-recherche button{
     background-color:#0065FC;
     border-width: 1px;
     border-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
-
+        
     padding-left: 15px;
     padding-right: 15px;
     height: 100%;
@@ -163,9 +166,7 @@ h2{
     font-weight: 700;
 
     cursor: pointer;
-
-}
-
+    }
 
 /******filtre******/
 
@@ -181,12 +182,24 @@ h2{
     display: flex;
     align-items: center;
 }
+.filtre button{
+    width: 100%;
+}
+.filtre strong{
+    font-size: 18px;
+}
+.filtre i{
+    font-size: 15px;
+}
 
 .filtre-border{
     border: 2px #F2F2F2 solid;
     border-radius: 50px;
 
+    background-color: white;
+
     height: 100%;
+
     padding: 0px 19px;
 
     align-items: center;
@@ -266,7 +279,9 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
-
+.hebergements-and-populaires h2{
+    font-size: 22px;
+}
 
 /****** Hebergements ***********/
 
@@ -328,6 +343,7 @@ a {
 }
 
 .afficher-plus{
+    display: block;
     margin: 36px 0 6px 0;
     cursor: pointer;
 }
@@ -384,14 +400,15 @@ a {
     margin-left: 25px;
     margin-right: 25px;
 }
+.activités h2{
+    margin-bottom: 30px;   
+}
 .activité-card{
     gap: 30px;
     flex-wrap: wrap;
 }
 
-.activités h1{
-    margin-bottom: 40px;
-}
+
 
 .activité-card img{
     height: 90%;
@@ -399,7 +416,7 @@ a {
 }
 
 .spé img{
-     height: 87.2%;
+     height: 85%;
 }
 
 .activité-card article{
@@ -413,7 +430,7 @@ a {
     width: 23%;
 }
 
-.activité-card h2{
+.activité-card h3{
     padding-left: 15px;
 }
 
@@ -426,7 +443,9 @@ a {
     margin-top: 70px;  
     padding-left: 20px;
 }
-
+.footer-container div{
+    margin-top: 20px;
+}
 .footer-container p{
     cursor: pointer;
 }
@@ -472,6 +491,9 @@ a {
     .hebergements-and-populaires section{
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .hebergements h2{
+        margin: 0;
     }
 
 /******hébergements******/
@@ -532,17 +554,18 @@ a {
        height: 270px;
     }
     .spé img{
-        height: 72%;
+        height: 70%;
     }
     .spé-2 img{
-        height: 72%;
+        height: 70%;
     }
-    .spé h2{
+    .spé h3{
         margin-top: 25px;
     }
-    .spé-2 h2{
+    .spé-2 h3{
         margin-top: 25px;
     }
+ 
 
 /******footer******/
     .footer-container div{
@@ -595,6 +618,9 @@ a {
         margin-bottom: 40px;   
         gap: 0;
    }
+   .nav-container{
+    cursor: pointer;
+   }
    .border-nav{
     display: block;
         border-bottom: solid #F2F2F2 2px;
@@ -642,23 +668,28 @@ a {
         
         height: 400px;
    }
+   .filtre strong{
+        padding: 12px;
+
+   }
    .filtre-container{
         justify-content: center;
     }
-    .filtre-container h2{
-        font-size: 14px;
+    .filtre-container strong{
+        font-size: 14px;  
     }
-   
+
    .filtre div{
-    align-items: initial;
-    height: auto;
+        align-items: initial;
+        height: initial;
    }
    .filtre-border i{
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
    }
    .filtre-border {
-    width: 36%;
+        width: 36%;
    }
  
 /******info-bar******/
